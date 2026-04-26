@@ -1,6 +1,7 @@
 import RequestHeader from "./Components/RequestHeader";
 import SideBar from "./Components/SideBar";
 import Body from "./Components/Body";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <RequestHeader />
       <div className="flex">
         <SideBar />
-        <Body />
+        <Outlet/>
       </div>
     </div>
   );
